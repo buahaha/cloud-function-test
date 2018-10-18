@@ -1,4 +1,4 @@
-# Cloud Function Test
+# Cloud Function Test ![Travis CI][travis ci]
 
 Test your functions before deploying to cloud. Write code locally, then test it.
 
@@ -54,3 +54,4 @@ test.close();
 [google's functions pricing]: https://cloud.google.com/functions/pricing
 [express req]: http://expressjs.com/en/4x/api.html#req
 [express res]: http://expressjs.com/en/4x/api.html#res
+[travis ci]: https://travis-ci.org/buahaha/cloud-function-test.svg?branch=master
