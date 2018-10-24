@@ -25,7 +25,6 @@
   },
   "homepage": "https://github.com/buahaha/cloud-function-test#readme",
   "dependencies": {
-    "body-parser": "^1.18.3",
     "express": "^4.16.4"
   },
   "devDependencies": {

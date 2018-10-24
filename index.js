@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 
 class TestFunction {
   static fn(req, res) {
@@ -16,7 +15,10 @@ class TestFunction {
   static start(port = 3003) {
     var app = express();
 
-    app.use(bodyParser.json());
+    // parse json
+    app.use(express.json());       // to support JSON-encoded bodies
+    app.use(express.urlencoded({extended: true})); // to support URL-encoded bodies
+
     app.get('/', (req, res) => {
       this.fn(req, res);
     });
